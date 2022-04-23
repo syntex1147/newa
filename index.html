@@ -1,0 +1,83 @@
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+<meta name="apple-mobile-web-app-capable" content="yes"/>
+<meta name="apple-mobile-web-app-status-bar-style" content="black"/>
+<meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, shrink-to-fit=no, minimal-ui"/>
+<meta name="description" content=""/>
+<link rel="icon" href="assets/favicons/favicon.png" type="image/png"/>
+<link rel="apple-touch-icon-precomposed" sizes="114x114" href="images/touch-icon-114x114.png"/>
+<link rel="apple-touch-icon-precomposed" sizes="72x72" href="images/touch-icon-72x72.png"/>
+<link rel="apple-touch-icon-precomposed" sizes="57x57" href="images/touch-icon-57x57.png"/>
+<link rel="apple-touch-icon-precomposed" href="images/touch-icon-57x57.png"/>
+<style>
+body {
+            background-color: #000000;
+            margin: 0;
+            -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+        }
+
+        .fontcache {
+            position: fixed;
+            margin-left: -100px;
+        }
+
+        #og-game-holder {
+            position: fixed;
+            overflow: hidden;
+            width: 100%;
+            height: 100vh;
+            background-position: center;
+            background-repeat: no-repeat;
+            margin: 0;
+        }
+</style>
+<title>Subway Surfers v0.3.9</title>
+<script type="text/javascript" id="analytics" async="" src="https://api.gamemonetize.com/ga.js"/>
+<script type="text/javascript" async="" src="//gamemonetize.com/api/ima3.js"/>
+<script id="gamemonetize-sdk" src="js/sdk.js"/>
+<script src="https://bigideasmath.gq/gamefiles/subwaysurfers/js/games_lib/ludiAdapter.js" charset="utf-8"/>
+<script type="text/javascript">
+window.SDK_OPTIONS = {
+            gameId: "4jerk8kzzf8685dbcx2buh5i3o5zhugu",
+            onEvent: function(a) {
+                switch (a.name) {
+                    case "SDK_GAME_PAUSE":
+                        // pause game logic / mute audio
+                        break;
+                    case "SDK_GAME_START":
+                        // advertisement done, resume game logic and unmute audio
+                        break;
+                    case "SDK_READY":
+                        // when sdk is ready
+                        break;
+                }
+            }
+        };
+        (function(a, b, c) {
+            var d = a.getElementsByTagName(b)[0];
+            a.getElementById(c) || (a = a.createElement(b), a.id = c, a.src = "js/sdk.js", d.parentNode.insertBefore(a, d))
+        })(document, "script", "gamemonetize-sdk");
+</script>
+<link rel="stylesheet" type="text/css" href="https://bigideasmath.gq/gamefiles/subwaysurfers/assets/font/lilita-one.css?v=1gefx1jwdk0gj12hb" media="all"/>
+<link rel="stylesheet" type="text/css" href="https://bigideasmath.gq/gamefiles/subwaysurfers/assets/font/titan-one.css?v=1gefx1jwdk0gj12hb" media="all"/>
+<script src="https://bigideasmath.gq/gamefiles/subwaysurfers/assets/font/titan-one.css?v=1gefx1jwdk0gj12hbjs/inflate.min.js?v=1gefx1jwdk0gj12hb"/>
+<script src="https://bigideasmath.gq/gamefiles/subwaysurfers/assets/font/titan-one.css?v=1gefx1jwdk0gj12hbjs/vendor.js?v=1gefx1jwdk0gj12hb"/>
+<script src="https://bigideasmath.gq/gamefiles/subwaysurfers/assets/font/titan-one.css?v=1gefx1jwdk0gj12hbjs/main.js?v=1gefx1jwdk0gj12hb"/>
+</head>
+<body>
+<div id="og-game-holder" style="background-color: rgb(5, 47, 108);">
+<canvas width="1365" height="631" style="touch-action: none; position: absolute; width: 1517px; height: 702px; left: 0px; top: 0px; cursor: inherit;"/>
+</div>
+<script src="https://bigideasmath.gq/gamefiles/subwaysurfers/js/boot.js"/>
+<div class="fontcache" style="font-family: "Lilita One";">.</div>
+<div class="fontcache" style="font-family: "Titan One";">.</div>
+<div id="imaContainer" style="position: absolute; z-index: 10000; top: 0px; left: 0px; width: 100%; height: 100%; background-color: rgb(0, 0, 0); visibility: hidden; overflow: hidden;">
+<video id="imaVideo"/>
+</div>
+<div id="sdk__advertisement" style="position: fixed; z-index: 0; top: 0px; left: 0px; width: 100%; height: 100%; transform: translateX(-9999px); background-color: rgba(0, 0, 0, 0.8); opacity: 0; transition: opacity 300ms cubic-bezier(0.55, 0, 0.1, 1) 0s;">
+<div id="sdk__advertisement_slot" style="position: absolute; background-color: rgb(0, 0, 0); top: 0px; left: 0px; width: 1517px; height: 702px;"/>
+</div>
+</body>
+</html>
